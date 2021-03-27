@@ -52,6 +52,21 @@ body {
     height: 100vh;
 }
 
+.home .setting {
+    left: 0;
+    top: 150px;
+    background-color: red;
+    z-index: 555;
+    padding: 12px 10px;
+    background-color: black !important;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.home .setting:hover {
+    opacity: 0.8;
+}
+
 .navbar {
     border-bottom: 1px solid #ffffff33;
     left: 0;
@@ -125,6 +140,9 @@ body {
 .home .carousel .slider-buttons a {
     position: relative;
     padding: 1em 1.25em;
+    border-top-left-radius: 0 !important;
+    border-bottom-left-radius: 0 !important;
+
 
 
 }
@@ -315,7 +333,8 @@ body {
 /* END OUR TEAM */
 /* START SERVICES */
 .services .services-item .icon {
-    width: 50px;
+    width: 90px;
+    overflow: hidden;
 }
 
 .services .services-item .icon i {
@@ -362,6 +381,38 @@ body {
     transform: scale(1.3);
 }
 
+
+
+.reviews .review-text p {
+    font-size: 25px;
+    color: #666;
+    font-weight: 500;
+    position: relative;
+
+}
+
+.reviews .review-text p::before {
+    content: '\f10d';
+    position: absolute;
+    left: -30px;
+    top: 0px;
+    font-size: 30px;
+    color: #666;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+
+.reviews .review-text p::after {
+    position: relative;
+    bottom: -10px;
+    right: 0;
+    content: '\f10e';
+    font-size: 30px;
+    color: #666;
+    font-weight: 900;
+    font-family: "Font Awesome 5 Free";
+}
+
 /* END REVIEWS */
 /* START CONTACT */
 .contact {
@@ -382,7 +433,7 @@ body {
 }
 
 .contact .icon {
-    width: 60px;
+    width: 50px;
 }
 
 .contact .icon i {
@@ -548,10 +599,40 @@ footer .tags a:hover {
         width: 50px !important;
     }
 
+    .reviews .review-text {
+
+        width: 100% !important;
+    }
+
 }
 
 /* Medium devices (tablets, less than 992px) */
-@media (max-width: 991.98px) {}
+@media (min-width: 767.99px) and (max-width: 991.98px) {
+    .reviews .imgs {
+        width: 70%;
+    }
+
+    .reviews .imgs li {
+        height: 60px !important;
+        width: 60px !important;
+    }
+
+    .reviews .review-text {
+
+        width: 100% !important;
+    }
+}
 
 /* Large devices (desktops, less than 1200px) */
-@media (max-width: 1199.98px) {}
+@media (min-width: 991.99px) and (max-width: 11999.98px) {
+    .reviews .imgs {
+        width: 60%;
+    }
+
+    .reviews .imgs li {
+        height: 90px !important;
+        width: 90px !important;
+    }
+}
+
+@media (min-width: 1199.98px) {}
