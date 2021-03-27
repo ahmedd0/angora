@@ -1,0 +1,489 @@
+/* GLOBAL */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+    line-height: 25px;
+
+}
+
+.main-color {
+    color: #f25454 !important;
+}
+
+.main-bg {
+    background-color: #f25454 !important;
+}
+
+.head {
+    width: 70%;
+    margin: auto;
+}
+
+.head h2 {
+    font-size: 38px;
+    color: #282828;
+    font-weight: 700;
+}
+
+.head .divider {
+    width: 50px;
+    height: 1px;
+    background-color: #282828;
+    margin: auto;
+    transition: all 0.5s ease;
+}
+
+.head p {
+    font-size: 18px;
+    color: #999;
+    font-weight: 400;
+    margin-top: 20px;
+}
+
+.head:hover .divider {
+    width: 70px;
+}
+
+/* GLOBAL */
+.home {
+    height: 100vh;
+}
+
+.navbar {
+    border-bottom: 1px solid #ffffff33;
+    left: 0;
+    z-index: 6;
+}
+
+
+.navbar .nav-item {
+    padding-right: 10px;
+    font-size: 13px;
+}
+
+.navbar .nav-item a {
+    font-weight: 600;
+    color: white !important;
+    transition: all 1s ease;
+
+}
+
+.navbar .active a {
+    color: #f25454 !important;
+}
+
+.navbar li:hover a {
+    color: #f25454 !important;
+}
+
+.navbar .nav-social {
+    margin-left: 50px !important;
+}
+
+.navbar .nav-social li a {
+    transition: all 0.7s ease;
+}
+
+.home .carousel .slider-buttons {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    z-index: 5;
+}
+
+.home .carousel .carousel-inner img {
+    object-fit: cover;
+    object-position: center center;
+}
+
+.home .carousel .carousel-inner .header-content {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    transform: translateX(100%);
+    animation-name: translate;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease;
+    opacity: 0;
+
+}
+
+.home .carousel .carousel-inner .header-content h1 {
+    font-size: 4.375em;
+    width: 40%;
+    font-weight: 900;
+}
+
+.home .carousel .slider-buttons a {
+    position: relative;
+    padding: 1em 1.25em;
+
+
+}
+
+.home .carousel .slider-buttons a i {
+    transition: all 0.3s ease;
+    font-weight: 3.125em;
+}
+
+.home .carousel .slider-buttons a .button-layer {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 0%;
+    background-color: white;
+    z-index: -1;
+    transition: all 0.3s ease;
+}
+
+.home .carousel .slider-buttons a:hover .button-layer {
+    width: 100% !important;
+}
+
+.home .carousel .slider-buttons a:hover i {
+    color: #f25454 !important;
+}
+
+@keyframes translate {
+    from {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+/* START ABOUT */
+
+.about .about-us-text p {
+    font-size: 0.875em;
+    color: #666;
+    font-weight: 300;
+
+}
+
+
+.about .about-progress .progress {
+    overflow: visible;
+    margin-bottom: 2em;
+    height: 5px !important;
+    border-radius: 10px;
+
+}
+
+.about .about-progress .progress .progress-bar {
+    overflow: visible !important;
+    background-color: #f25454 !important;
+    height: 100%;
+    border-radius: 10px;
+
+}
+
+.about .about-progress .progress-txt {
+    color: black;
+    font-size: 0.8em;
+}
+
+.about .about-progress .progress-txt h3 {
+    font-weight: 600;
+    color: #444;
+    font-size: inherit;
+
+}
+
+.about .about-progress .progress-txt span {
+    font-weight: 500;
+    color: #666;
+    font-size: inherit;
+}
+
+
+/* END ABOUT */
+/* START OUR TEAM  */
+.our-team .team-members .team-member .img-content img {
+    transition: all 0.3s ease-in-out;
+}
+
+.our-team .team-members .team-member .img-content .member-accounts {
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background-color: #f25454;
+    opacity: 0;
+    transition: all 0.3s;
+}
+
+.our-team .team-members .team-member .img-content .member-accounts ul li i {
+    font-size: 18px;
+
+    padding: 0px 15px;
+}
+
+.our-team .team-members .team-member:hover .member-accounts {
+    opacity: 0.8;
+}
+
+.our-team .team-members .team-member:hover .img-content img {
+    transform: scale(1.1) !important;
+}
+
+.our-team .question {
+    padding: 100px 0 !important;
+}
+
+.our-team .question h3 {
+    font-size: 32px;
+    font-weight: 400;
+    color: #282828;
+}
+
+.our-team .question button {
+    padding: 10px 20px;
+}
+
+
+/* END OUR TEAM */
+/* START SERVICES */
+.services .services-item .icon i {
+    font-size: 28px;
+}
+
+.services .txt-item h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #282828;
+
+
+}
+
+.services .txt-item p {
+    font-size: 14px;
+    font-weight: 400;
+    color: #666;
+
+
+}
+
+
+/* END SERVICES */
+/* START REVIEWS */
+.reviews .imgs {
+    width: 55%;
+}
+
+.reviews .imgs li {
+    height: 100px !important;
+    width: 100px !important;
+    border-radius: 50%;
+    overflow: hidden;
+    opacity: 0.3;
+}
+
+.reviews .imgs .active {
+    opacity: 1;
+    transform: scale(1.3);
+}
+
+/* END REVIEWS */
+/* START CONTACT */
+.contact {
+    background-color: #fafafa;
+}
+
+.contact h3 {
+    font-size: 32;
+    font-weight: 600;
+    color: #282828;
+}
+
+.contact h4 {
+    font-weight: 600;
+    font-size: 18px;
+    color: #282828;
+    transition: all 0.3s;
+}
+
+.contact .icon i {
+    font-size: 30px;
+}
+
+.contact p {
+    font-size: 14px;
+    color: #666;
+}
+
+.contact .contact-item .item:hover h4 {
+    color: #f25454;
+}
+
+.contact input,
+.contact textarea {
+
+    color: #a6a6a6 !important;
+    border: 2px solid #eee;
+    box-shadow: none !important;
+    outline: none !important;
+}
+
+.contact input:focus,
+.contact textarea:focus {
+
+    border: 2px solid #f25454;
+}
+
+.contact button {
+    padding: 10px 20px;
+    transition: all 0.3s;
+}
+
+.contact button:hover {
+    opacity: 0.6;
+}
+
+/* END CONTACT US */
+/* START FOOTER */
+footer {
+    background-image: url(../imgs/dotted-map.png);
+    background-size: contain;
+    background-color: #222 !important;
+    position: relative;
+}
+
+footer .to-up {
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translate(-50%, -50%);
+    height: 50px;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(242 84 84 / 50%);
+    border-radius: 50%;
+    text-decoration: none;
+    transition: all 0.3s;
+
+}
+
+footer .to-up:hover {
+    background-color: #f25454;
+
+}
+
+
+footer h3 {
+    font-size: 20px;
+    font-weight: 600;
+}
+
+footer p {
+    color: #b0b0b0;
+    font-size: 14px;
+}
+
+footer .footer-item ul li a {
+    color: #b0b0b0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+footer .tags a {
+    color: #b0b0b0 !important;
+    font-size: 14px;
+    padding: 5px 7px !important;
+}
+
+footer .tags a:hover {
+    color: #f25454 !important;
+    background-color: transparent !important;
+    border: 1px solid #f25454;
+}
+
+
+.footer-end {
+    background-color: #1a1a1a;
+}
+
+.footer-end .footer-social-icon {
+    width: 35% !important;
+}
+
+.footer-end .footer-social-icon i {
+    transition: all 0.3s;
+}
+
+.footer-end .footer-social-icon i:hover {
+    width: 35% !important;
+    color: #f25454;
+}
+
+.footer-end .copyright p {
+    color: #b0b0b0;
+}
+
+.footer-end .copyright a {
+    text-decoration: none;
+    transition: all 0.3s;
+    color: white;
+}
+
+.footer-end .copyright a:hover {
+    color: #f25454;
+}
+
+/* END FOOTER */
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {}
+
+/* Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) {
+    .home .carousel .carousel-inner .header-content h1 {
+        font-size: 36px;
+        width: 70%;
+        font-weight: 900;
+    }
+
+    .head {
+        width: 100%;
+        margin: auto;
+    }
+
+    .our-team .question h3 {
+        font-size: 25px;
+    }
+
+    .reviews .imgs {
+        width: 80%;
+    }
+
+    .footer-end .footer-social-icon {
+        margin: auto;
+    }
+
+    .reviews .imgs li {
+        height: 50px !important;
+        width: 50px !important;
+    }
+
+}
+
+/* Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) {}
+
+/* Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {}
